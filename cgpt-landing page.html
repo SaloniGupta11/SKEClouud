@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>My Landing Page</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Header styles */
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 42px;
+
+
+}
+
+p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+/* Contact - box*/
+ .contact-box {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        width: 400px;
+        margin: 0 auto;
+        background-color: #f7f7f7;
+      }
+
+      .contact-box h1 {
+        text-align: center;
+      }
+
+      .contact-box label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .contact-box input[type="text"],
+      .contact-box input[type="email"],
+      .contact-box textarea {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+      }
+
+      .contact-box input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        float: right;
+      }
+/* Features section styles */
+.features {
+  padding: 50px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 36px;
+}
+
+.features li {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.features h3 {
+  margin-bottom: 10px;
+}
+
+.features p {
+  font-size: 16px;
+}
+
+/* Pricing section styles */
+.pricing {
+  padding: 50px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.pricing h2 {
+  font-size: 36px;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  margin: 0 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Contact section styles */
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+}
+
+.contact form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact input,
+.contact textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius:
+}
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .features {
+      background-color: #eee;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .features li {
+      display: inline-block;
+      margin: 20px;
+      vertical-align: top;
+      width: 30%;
+      min-width: 250px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .features h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .features p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .pricing {
+      background-color: #f4f4f4;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .pricing h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .pricing-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .features {
+      background-color: #f4f4f4;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .features-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      margin: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: left;
+      width: 30%;
+      min-width: 250px;
+      padding: 20px;
+      vertical-align: top;
+    }
+
+    .card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card ul li:before {
+      content: "\2022";
+      color: #4CAF50;
+      font-weight: bold;
+      display: inline-block;
+      width:
+    }
+
+del{
+      text-decoration: line-through;
+      text-decoration-color: red;
+      color: red;
+    }
+html{
+  scroll-behavior: smooth;
+}
+
+ @keyframes slide-in {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0%);
+        }
+      }
+
+.contact-box {
+        animation: slide-in 1s ease-out;
+      }
+
+    </style>
+</head>
+<body>
+  <header style = "background-color:blue;">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+     </header>
+     <!-- Section 1a -->
+     <div class="container"  >
+      <div class="row" style="background-image: url('cloud-computing-page-banner.jpg'); background-repeat: no-repeat; background-size: cover; color: black; ">
+        <div class="col-md-9">
+         <h1>Discover how cloud tally can help you streamline accounting processes</h1>
+          <a href="#startup-pricing" class="btn">Browse Offers</a>
+    <h6>*Limited time offer only for Startups</h6>
+        </div>
+        <!-- Section 1b -->
+        <div class="col-md-3">
+           <div class="contact-box">
+      <h1>Contact Us</h1>
+      <form action="submit-form.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+      </div>
+    </div>
+    <!-- Section 2 -->
+     <section id = "Features-of-cloudTally "class="pricing" style = "background-color: #EBE8FC;">
+    <h3>Let's See Tally on Cloud</h3>
+    <p> Watch videos on Experience Live Demo by clicking <a href = #>here</a> (Ask for password by calling SKE cloud private limited sales team at +91-8585920238). </p>
+    <div class="pricing-cards">
+      <div class="card">
+        <img src="Tally prime silver.png" alt="Tally Prime Silver">
+        <h4>Reliable 24*7 Servers</h4>
+        <p>Fastest Intel Premium processor powered server keeps your tally running 24*7 with blazing fast speed on 50Gbps connectivity. </p>
+      </div>
+      <div class="card">
+        <img src="Tally prime silver.png" alt="Tally Prime Silver">
+        <h4>Any Device Access</h4>
+      <p>Access your single-user or multi-user tally on PC, Laptops, Mobiles, Tablets, Windows, Mac, Android and Linux </p>
+      </div>
+      <div class="card">
+        <img src="Tally prime silver.png" alt="Tally Prime Silver">
+        <h4>Automatic Backup</h4>
+      <p>Your Tally Data is 100% safe with high security password encrypted automatic cloud backup. </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id = "startup-pricing">
+    <h3>Affordable Tally AWS Packages</h3>
+    <p>TallyOnlineCloud.com presents best plans for running your tally erp9 or tally prime single or multi-user on superfast and secure Amazon's AWS cloud servers. Now you can work on your tally online from home, office or on the go with the reliablity of Amazon AWS Servers. Your Tally works via Browsers, Desktop Application and Microsoft RDP on 100% Tally Optimized AWS Servers by us as we Authorized AWS Partners. </p>
+    <div class="pricing-cards">
+      <div class="card">
+        <img src="Tally prime silver.png" alt="Tally Prime Silver">
+        <h3>Tally Prime Silver</h3>
+        <p><del>31400/- + GST</del> 18000/- + GST</p>
+        <ul>
+          <li>Latest Tally Single User</li>
+          <li>1 User Tally on Cloud Nippon Group's NTT Standard Plan </li>
+          <li>Tally Attachment Customization</li>
+        </ul>
+        <a href="button-landing page.html" class="btn">Buy Now</a>
+      </div>
+      <div class="card">
+        <img src="Tally prime silver.png" alt="Tally Prime Silver">
+        <h3>Tally Prime Gold</h3>
+        <p><del>84200/- + GST</del> 54000/- + GST</p>
+        <ul>
+          <li>Latest Tally Multi User</li>
+          <li>3 User Tally on Cloud Nippon Group's NTT Standard Plan </li>
+          <li>Tally Attachment Customization</li>
+        </ul>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+      <div class="card">
+        <img src="Tally prime silver.png" alt="Tally Prime Silver">
+        <h3>Rental Tally</h3>
+        <p><del>16800- + GST</del> 7200/- + GST</p>
+        <ul>
+          <li>Get Tally on rent to try before you buy </li>
+          <li> Rental Tally TYU on Amazon AWS Servers</li>
+        </ul>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+<!-- Section 1a -->
+<section style = "background-color: #EBE8FC;">
+     <div class="container" >
+      <div class="row">
+        <div class="col-md-9">
+         <h1>Cloud Tally AWS Demo</h1>
+         <p>TallyOnlineCloud.com helps you understand functioning of your Single-User or Multi-User Tally on AWS Cloud Servers. We are authorized AWS Partners so you are guaranteed 100% genuine AWS Servers</p>
+
+         <p>Watch Videos or Experience Live Demo by clicking here (Ask for password by calling TallyOnlineCloud sales team at +91- 85 85 950 238 ) </p>
+         <a href="#" class="btn">Discover More</a>
+        </div>
+        <!-- Section 1b -->
+        <div class="col-md-3">
+        <img src="Tally prime silver.png" alt="Tally Prime Silver">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          
+          <div class="pricing-cards">
+            <div class="card">
+              <img src="Tally prime silver.png" alt="Tally Prime Silver">
+              <h3>Phone</h3>
+              <p>Our customer care is open from Mon - Fri 10:00am to 6:00pm</p>
+              <p> +91-8585950238</p>
+            </div>
+            <div class="card">
+              <img src="Tally prime silver.png" alt="Tally Prime Silver">
+              <h3>Email</h3>
+              <p>Our support team will get back to you in 48hr during standard business hours</p>
+              <p>info@skecloud.com</p>
+            </div>
+          
+          </div>
+        </div>
+        <div class="col-md-9">
+        <h2>Connect with us</h2>
+        <h5>For customized plans and more information about our services, share your details below and we will be in touch with you within 48 hours
+           <form>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <textarea placeholder="Message"></textarea>
+              <button type="submit" class="btn">Contact Us</button>
+           </form>
+  </section>
+
+  <footer>
+    <p>&copy; 
